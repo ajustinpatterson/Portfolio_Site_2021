@@ -9,22 +9,49 @@ import './Header.scss';
 const Header = () => {
   return (
     <div className="header">
-      <button className="nav-btn">
-        <img src={insta} style={{ paddingBottom: '.05em' }} alt="placeholder" />
-      </button>
-      <button className="nav-btn">
-        <img src={medium} alt="placeholder" />
-      </button>
-      <button className="nav-btn">
-        <img src={lnkin} style={{ paddingBottom: '.3em' }} alt="placeholder" />
-      </button>
-      <button className="nav-btn">
-        <img
-          src={github}
-          style={{ paddingBottom: '.05em' }}
-          alt="placeholder"
-        />
-      </button>
+      <div className="nav-btn">
+        <a
+          href="http://www.instagram.com/ajustinpatterson"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img
+            src={insta}
+            style={{ paddingBottom: '.05em' }}
+            alt="placeholder"
+          />
+        </a>
+      </div>
+
+      <div className="nav-btn">
+        <a
+          href="http://www.medium.com/@ajustinpatterson"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src={medium} alt="placeholder" />
+        </a>
+      </div>
+
+      <div className="nav-btn">
+        <a
+          href="http://www.linkedin.com/in/ajustinpatterson"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src={lnkin} alt="placeholder" />
+        </a>
+      </div>
+
+      <div className="nav-btn">
+        <a
+          href="http://github.com/ajustinpatterson"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src={github} alt="placeholder" />
+        </a>
+      </div>
     </div>
   );
 };
