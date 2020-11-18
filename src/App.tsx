@@ -1,10 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import FrontPage from './containers/FrontPage/FrontPage';
+import Header from './components/Header/Header';
 
 function App() {
-  return <FrontPage />;
+  return (
+    <div>
+      <Header />
+      <FrontPage />
+    </div>
+  );
 }
 
 export default App;
