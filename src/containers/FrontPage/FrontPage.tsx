@@ -7,7 +7,7 @@ const FrontPage = () => {
     <div className="container">
       <div className="text">
         <h1>Justin Patterson</h1>
-        <h4 style={{ paddingLeft: '15%' }}>FULL STACK SOFTWARE DEVELOPER</h4>
+        <h4>FULL STACK SOFTWARE DEVELOPER</h4>
         <p style={{ padding: '0 10% 0 5%' }}>
           Hi! I'm Justin, a developer living in Barcelona, Spain. I specialize
           in React and Node.js, with an emphasis on clean, modern design.{' '}
