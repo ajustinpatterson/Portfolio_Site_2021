@@ -15,11 +15,7 @@ const Header = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <img
-            src={insta}
-            style={{ paddingBottom: '.05em' }}
-            alt="placeholder"
-          />
+          <img src={insta} alt="placeholder" />
         </a>
       </div>
 
@@ -39,7 +35,7 @@ const Header = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <img src={lnkin} alt="placeholder" />
+          <img src={lnkin} alt="placeholder" style={{ width: '90%' }} />
         </a>
       </div>
 
