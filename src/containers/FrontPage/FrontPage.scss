@@ -3,7 +3,19 @@
 .container {
   font-family: 'Roboto Slab', serif;
   display: flex;
+  .text {
+    a {
+      text-decoration: none;
+    }
+    a:visited {
+      color: black;
+    }
+    a:hover {
+      opacity: 50%;
+    }
+  }
   .my-name {
+    color: black;
     margin: 5% auto auto auto;
     text-align: center;
     line-height: 1.3;

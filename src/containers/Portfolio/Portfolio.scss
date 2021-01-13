@@ -23,5 +23,14 @@
     .description {
       margin: 2% 2% auto auto;
     }
+    a {
+      text-decoration: none;
+    }
+    a:visited {
+      color: black;
+    }
+    a:hover {
+      opacity: 50%;
+    }
   }
 }
