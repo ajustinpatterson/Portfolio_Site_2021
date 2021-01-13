@@ -1,52 +1,67 @@
 import React from 'react';
+import emailjs from 'emailjs-com';
+
 import './Contact.scss';
 
 const Contact = () => {
+  const sendEmail = (event: any) => {
+    event.preventDefault();
+
+    emailjs
+      .sendForm(
+        'site-contact-form',
+        'template_wckxt9w',
+        event.target,
+        'user_5meM8iqMXVX0yYwvckqiz',
+      )
+      .then(
+        (data) => {
+          console.log(data.text);
+        },
+        (err) => {
+          console.log(err.text);
+        },
+      );
+  };
+
   return (
     <div className="contact-container">
-      <div className="contact-wrapper">
-        <form action="" method="post">
-          <h3>Drop me a line!</h3>
-          <h4>Contact us for custom quote</h4>
-          <input placeholder="Your name" type="text" tabIndex={1} required />
+      <form action="" onSubmit={sendEmail}>
+        <h2>Drop me a line!</h2>
+        <input type="hidden" name="contact_number" />
+
+        <div className="personal-info">
+          <input
+            placeholder="Your name"
+            type="text"
+            name="user_name"
+            style={{ width: '40%' }}
+            tabIndex={1}
+            required
+          />
 
           <input
             placeholder="Your Email Address"
             type="email"
+            name="user_email"
+            style={{ width: '40%' }}
             tabIndex={2}
             required
           />
+        </div>
 
-          <input
-            placeholder="Your Phone Number (optional)"
-            type="tel"
-            tabIndex={3}
-            required
-          />
+        <textarea
+          name="message"
+          placeholder="Type your message here...."
+          style={{ height: '50%' }}
+          tabIndex={5}
+          required
+        ></textarea>
 
-          <input
-            placeholder="Your Web Site (optional)"
-            type="url"
-            tabIndex={4}
-            required
-          />
-
-          <textarea
-            placeholder="Type your message here...."
-            tabIndex={5}
-            required
-          ></textarea>
-
-          <button
-            name="submit"
-            type="submit"
-            id="contact-submit"
-            data-submit="...Sending"
-          >
-            Submit
-          </button>
-        </form>
-      </div>
+        <button type="submit" value="Send" data-submit="...Sending">
+          Send
+        </button>
+      </form>
     </div>
   );
 };

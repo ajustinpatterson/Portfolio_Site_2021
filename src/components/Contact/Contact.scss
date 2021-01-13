@@ -2,4 +2,39 @@
   font-family: 'Roboto Slab', serif;
   margin: 1%;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  h2 {
+    text-align: center;
+  }
+  form {
+    width: 80%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    input {
+      text-indent: 3%;
+      margin: 3% 4%;
+      height: 40%;
+    }
+    textarea {
+      margin-top: 2%;
+      text-indent: 1%;
+      resize: none;
+    }
+    button {
+      background-color: white;
+      margin-top: 1%;
+      font-size: medium;
+      align-self: center;
+      text-align: center;
+      border: 1px solid #858585;
+      border-radius: 8px;
+      width: 15%;
+      height: 15%;
+    }
+    button:hover {
+      opacity: 50%;
+    }
+  }
 }
