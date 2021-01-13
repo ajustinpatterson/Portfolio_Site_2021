@@ -6,7 +6,7 @@ const FrontPage = () => {
   return (
     <div className="container">
       <div className="text">
-        <h1>Justin Patterson</h1>
+        <h1 className="my-name">Justin Patterson</h1>
         <h4>FULL STACK SOFTWARE DEVELOPER</h4>
         <p style={{ padding: '0 10% 0 5%' }}>
           Hi! I'm Justin, a developer living in Barcelona, Spain. I specialize

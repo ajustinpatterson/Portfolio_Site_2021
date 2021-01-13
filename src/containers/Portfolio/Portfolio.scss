@@ -1,0 +1,27 @@
+.portfolio-container {
+  font-family: 'Roboto Slab', serif;
+  margin: 1%;
+}
+.portfolio-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10%;
+  margin-top: 0;
+}
+.title {
+  text-align: center;
+  line-height: 1.3;
+  font-size: 3.25em;
+}
+.project {
+  display: flex;
+  align-items: center;
+  .project-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .description {
+      margin: 2% 2% auto auto;
+    }
+  }
+}
