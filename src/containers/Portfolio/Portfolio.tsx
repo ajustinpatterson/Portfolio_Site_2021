@@ -23,7 +23,8 @@ const Portfolio = () => {
             </a>
             <p className="tech-stack">
               Technologies: React, Typescript, Express, Sequelize, PostgreSQL,
-              GraphQL/Apollo, socket.io, peerjs, WebRTC, Heroku, Docker, SASS
+              GraphQL/Apollo, socket.io, peerjs, WebRTC, Heroku, Docker, SASS,
+              Google Auth
             </p>
             <p className="description">
               Swift Video Meetings is a video chat app focused on keeping things
@@ -75,7 +76,8 @@ const Portfolio = () => {
               <h2>SimpleFi</h2>
             </a>
             <p className="tech-stack">
-              Technologies: React, Express, PostgreSQL, Ether.js
+              Technologies: React, Typescript, JWT auth, Express, PostgreSQL,
+              Ether.js
             </p>
             <p className="description">
               Simplefi is an investment portfolio tracker for decentralised
