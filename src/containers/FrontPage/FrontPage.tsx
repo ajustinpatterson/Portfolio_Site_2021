@@ -13,7 +13,12 @@ const FrontPage = () => {
           in React and Node.js, with an emphasis on clean, modern design.{' '}
         </p>
       </div>
-      <img src={profile} className="profile-pic" alt="profile" />
+      <img
+        src={profile}
+        className="profile-pic"
+        alt="profile"
+        title="Photo by Berta Vilanova :)"
+      />
     </div>
   );
 };
