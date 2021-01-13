@@ -18,7 +18,9 @@ const Portfolio = () => {
             alt="placeholder"
           />
           <div className="project-text">
-            <h2>Swift Video Meetings</h2>
+            <a href="https://github.com/ajustinpatterson/Swift-Video-Meetings">
+              <h2>Swift Video Meetings</h2>
+            </a>
             <p className="tech-stack">
               Technologies: React, Typescript, Express, Sequelize, PostgreSQL,
               GraphQL/Apollo, socket.io, peerjs, WebRTC, Heroku, Docker, SASS
@@ -43,7 +45,9 @@ const Portfolio = () => {
             alt="placeholder"
           />
           <div className="project-text" style={{ marginLeft: '5%' }}>
-            <h2>light_box</h2>
+            <a href="https://github.com/ajustinpatterson/light-box-solo-project">
+              <h2>light_box</h2>
+            </a>
             <p className="tech-stack">
               Technologies: React Native/Expo, Express, Sequelize, PostgreSQL,
               Cloudinary
@@ -67,7 +71,9 @@ const Portfolio = () => {
             alt="placeholder"
           />
           <div className="project-text" style={{ marginLeft: '8%' }}>
-            <h2>SimpleFi</h2>
+            <a href="https://github.com/raphael-mazet/SimpleFi">
+              <h2>SimpleFi</h2>
+            </a>
             <p className="tech-stack">
               Technologies: React, Express, PostgreSQL, Ether.js
             </p>

@@ -3,6 +3,7 @@ import './App.css';
 import FrontPage from './containers/FrontPage/FrontPage';
 import Header from './components/Header/Header';
 import Portfolio from './containers/Portfolio/Portfolio';
+import Contact from './components/Contact/Contact';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <FrontPage />
       <Portfolio />
+      <Contact />
     </div>
   );
 }
