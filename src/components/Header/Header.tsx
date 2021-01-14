@@ -1,4 +1,6 @@
 import React from 'react';
+import Nav from '../Nav/Nav';
+
 import insta from '../../assets/instagram.svg';
 import medium from '../../assets/medium-m.svg';
 import lnkin from '../../assets/linkedin-alt.svg';
