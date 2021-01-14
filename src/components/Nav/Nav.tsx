@@ -15,7 +15,7 @@ const Nav = ({
   };
 
   return (
-    <Menu>
+    <Menu pageWrapId={pageWrapId} outerContainerId={outerContainerId}>
       <a id="home" className="menu-item" href="/">
         Home
       </a>

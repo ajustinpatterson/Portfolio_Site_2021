@@ -15,15 +15,15 @@ ReactDOM.render(<App />, rootElement);
 
 function App() {
   return (
-    <div id="outer-container">
-      <main id="page-wrap">
-        <Nav outerContainerId={'outer-container'} pageWrapId={'page-wrap'} />
-      </main>
-      <Header />
-      <FrontPage />
-      <Portfolio />
-      <Contact />
-      <Footer />
+    <div className="App" id="outer-container">
+      <Nav outerContainerId={'outer-container'} pageWrapId={'page-wrap'} />
+      <div id="page-wrap">
+        <Header />
+        <FrontPage />
+        <Portfolio />
+        <Contact />
+        <Footer />
+      </div>
     </div>
   );
 }
