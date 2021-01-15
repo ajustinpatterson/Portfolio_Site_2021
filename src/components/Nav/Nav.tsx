@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { scaleDown as Menu } from 'react-burger-menu';
+import { Link } from 'react-router-dom';
 
 import './Nav.scss';
 
@@ -10,24 +11,24 @@ const Nav = ({
   outerContainerId: string;
   pageWrapId: string;
 }) => {
-  const showSettings = (event: any) => {
-    event.preventDefault();
-  };
+  const [isOpen, closeMenu] = useState(false);
 
   return (
     <Menu pageWrapId={pageWrapId} outerContainerId={outerContainerId}>
-      <a id="home" className="menu-item" href="/">
+      <Link
+        id="home"
+        className="menu-item"
+        to="/"
+        onClick={() => closeMenu(false)}
+      >
         Home
-      </a>
-      <a id="about" className="menu-item" href="/about">
-        About
-      </a>
-      <a id="contact" className="menu-item" href="/contact">
+      </Link>
+      <Link id="portfolio" className="menu-item" to="/portfolio">
+        Portfolio
+      </Link>
+      <Link id="contact" className="menu-item" to="/contact">
         Contact
-      </a>
-      <a onClick={showSettings} className="menu-item--small" href="/">
-        Settings
-      </a>
+      </Link>
     </Menu>
   );
 };

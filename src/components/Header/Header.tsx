@@ -23,7 +23,7 @@ const Header = () => {
 
       <div className="nav-btn">
         <a
-          href="http://www.medium.com/@ajustinpatterson"
+          href="http://ajustinpatterson.medium.com"
           target="_blank"
           rel="noreferrer"
         >
