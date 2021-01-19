@@ -25,16 +25,16 @@ const About = () => {
         </p>
         <p>
           Now, I'm working on more front end
-          <Link to="/Portfolio">challenges</Link> and sharpening my skills on
+          <Link to="/Portfolio"> challenges </Link> and sharpening my skills on
           custom react applications while dipping into back end technologies
           like Golang and Java.
         </p>
         <p>
           In my free time, I'm known to walk around Barcelona and snap photos
           with my old Fuji X-10 for my super old
-          <a href="http://cancionencantada.tumblr.com">travel blog</a>. I'm also
-          a wannabe novelist and avid cyclist. Please
-          <a href="mailto:ajustinpatterson@outlook.com">get in touch</a> if I
+          <a href="http://cancionencantada.tumblr.com"> travel blog</a>. I'm
+          also a wannabe novelist and an avid fan of vintage bicycles. Please
+          <a href="mailto:ajustinpatterson@outlook.com"> get in touch</a> if I
           can be of any service to you.
         </p>
       </div>
