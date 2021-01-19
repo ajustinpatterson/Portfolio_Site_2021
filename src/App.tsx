@@ -1,5 +1,4 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React, { useEffect, useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { Switch, Route, useLocation, useHistory } from 'react-router-dom';
 
@@ -13,37 +12,44 @@ import Footer from './components/Footer/Footer';
 
 import './App.css';
 
-const rootElement = document.getElementById('root');
-ReactDOM.render(<App />, rootElement);
-
 function App() {
-  const [isFirstMount, setIsFirstMount] = React.useState(true);
+  const [isFirstMount, setIsFirstMount] = useState(true);
   const location = useLocation();
   const history = useHistory();
 
-  React.useEffect(() => {
+  useEffect(() => {
     const unlisten = history.listen(() => {
+      console.log('is first mount: ', isFirstMount);
+
       isFirstMount && setIsFirstMount(false);
     });
 
     return unlisten;
   }, [history, isFirstMount]);
 
+  console.log('location: ', location);
+
   return (
-    <div className="App" id="outer-container">
-      <Nav outerContainerId={'outer-container'} pageWrapId={'page-wrap'} />
-      <Header />
-      <div id="page-wrap">
-        <AnimatePresence>
-          <Switch>
-            <Route exact path="/" component={FrontPage} />
+    <AnimatePresence exitBeforeEnter>
+      <div className="App" id="outer-container">
+        <Nav outerContainerId={'outer-container'} pageWrapId={'page-wrap'} />
+        <Header />
+        <div id="page-wrap">
+          <Switch location={location} key={location.pathname}>
+            <Route
+              exact
+              path="/"
+              component={(props: any) => (
+                <FrontPage isFirstMount={isFirstMount} {...props} />
+              )}
+            />
             <Route path="/portfolio" component={Portfolio} />
             <Route path="/contact" component={Contact} />
           </Switch>
-        </AnimatePresence>
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </AnimatePresence>
   );
 }
 

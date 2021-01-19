@@ -1,10 +1,15 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import profile from '../../assets/Profile.jpg';
 import './FrontPage.scss';
 
 const FrontPage = () => {
   return (
-    <div className="container">
+    <motion.div
+      className="container"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+    >
       <div className="text">
         <a href="mailto:ajustinpatterson@outlook.com">
           <h1 className="my-name">Justin Patterson</h1>
@@ -21,7 +26,7 @@ const FrontPage = () => {
         alt="profile"
         title="Photo by Berta Vilanova :)"
       />
-    </div>
+    </motion.div>
   );
 };
 

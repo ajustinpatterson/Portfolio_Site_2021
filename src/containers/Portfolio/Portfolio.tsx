@@ -9,7 +9,7 @@ import simple from '../../assets/simplefi-logo-transp.png';
 
 const Portfolio = () => {
   return (
-    <motion.div exit={{ opacity: 0 }}>
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
       <div className="portfolio-container">
         <h1 className="title">Portfolio</h1>
         <div className="portfolio-wrapper">

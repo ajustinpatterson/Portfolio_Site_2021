@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import emailjs from 'emailjs-com';
 
 import './Contact.scss';
@@ -25,7 +26,11 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact-container">
+    <motion.div
+      className="contact-container"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+    >
       <form action="" onSubmit={sendEmail}>
         <h2>Drop me a line!</h2>
         <input type="hidden" name="contact_number" />
@@ -62,7 +67,7 @@ const Contact = () => {
           Send
         </button>
       </form>
-    </div>
+    </motion.div>
   );
 };
 
