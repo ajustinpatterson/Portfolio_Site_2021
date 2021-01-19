@@ -5,8 +5,8 @@ const Footer = () => {
   return (
     <div className="footer">
       <p id="l">
-        Technologies used on this page include React, Typescript, SASS, and
-        email.js
+        Technologies used on this page include React, Typescript, SASS,
+        react-burger-menu, FramerMotion email.js
       </p>
       <div className="spacer"></div>
       <p id="r">© Justin Patterson 2021</p>
