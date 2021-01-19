@@ -3,6 +3,7 @@
 .container {
   font-family: 'Roboto Slab', serif;
   display: flex;
+  height: 83vh;
   .text {
     a {
       text-decoration: none;
@@ -26,7 +27,8 @@
   }
 }
 .profile-pic {
-  width: 50%;
+  max-width: 50%;
+  max-height: 70%;
   border-radius: 16px;
   margin-right: 0.75em;
 }
