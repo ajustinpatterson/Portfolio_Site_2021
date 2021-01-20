@@ -14,7 +14,7 @@ const Nav = ({
   //burger menu state
   const [menuOpen, setMenuOpen] = useState(false);
 
-  //burger menu handleClick
+  //burger menu handlers
   const handleBurgerClick = () => {
     setMenuOpen(false);
   };
@@ -34,8 +34,7 @@ const Nav = ({
         id="home"
         className="menu-item"
         to="/"
-        onClick={(event) => {
-          event.preventDefault();
+        onClick={() => {
           handleBurgerClick();
         }}
       >
@@ -45,8 +44,7 @@ const Nav = ({
         id="portfolio"
         className="menu-item"
         to="/portfolio"
-        onClick={(event) => {
-          event.preventDefault();
+        onClick={() => {
           handleBurgerClick();
         }}
       >
@@ -56,8 +54,7 @@ const Nav = ({
         id="about"
         className="menu-item"
         to="/about"
-        onClick={(event) => {
-          event.preventDefault();
+        onClick={() => {
           handleBurgerClick();
         }}
       >
@@ -67,8 +64,7 @@ const Nav = ({
         id="contact"
         className="menu-item"
         to="/contact"
-        onClick={(event) => {
-          event.preventDefault();
+        onClick={() => {
           handleBurgerClick();
         }}
       >
