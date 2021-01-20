@@ -11,25 +11,67 @@ const Nav = ({
   outerContainerId: string;
   pageWrapId: string;
 }) => {
-  const [isOpen, closeMenu] = useState(false);
+  //burger menu state
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  //burger menu handleClick
+  const handleBurgerClick = () => {
+    setMenuOpen(false);
+  };
+
+  const handleMenuOpen = () => {
+    setMenuOpen(true);
+  };
 
   return (
-    <Menu pageWrapId={pageWrapId} outerContainerId={outerContainerId}>
+    <Menu
+      pageWrapId={pageWrapId}
+      outerContainerId={outerContainerId}
+      isOpen={menuOpen}
+      onOpen={handleMenuOpen}
+    >
       <Link
         id="home"
         className="menu-item"
         to="/"
-        onClick={() => closeMenu(false)}
+        onClick={(event) => {
+          event.preventDefault();
+          handleBurgerClick();
+        }}
       >
         Home
       </Link>
-      <Link id="portfolio" className="menu-item" to="/portfolio">
+      <Link
+        id="portfolio"
+        className="menu-item"
+        to="/portfolio"
+        onClick={(event) => {
+          event.preventDefault();
+          handleBurgerClick();
+        }}
+      >
         Portfolio
       </Link>
-      <Link id="about" className="menu-item" to="/about">
+      <Link
+        id="about"
+        className="menu-item"
+        to="/about"
+        onClick={(event) => {
+          event.preventDefault();
+          handleBurgerClick();
+        }}
+      >
         About
       </Link>
-      <Link id="contact" className="menu-item" to="/contact">
+      <Link
+        id="contact"
+        className="menu-item"
+        to="/contact"
+        onClick={(event) => {
+          event.preventDefault();
+          handleBurgerClick();
+        }}
+      >
         Contact
       </Link>
     </Menu>
