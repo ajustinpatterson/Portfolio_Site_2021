@@ -10,7 +10,6 @@ import About from './containers/About/About';
 import Contact from './components/Contact/Contact';
 
 import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
 
 import './App.css';
 
@@ -33,9 +32,11 @@ function App() {
 
   return (
     <AnimatePresence exitBeforeEnter>
+      <Header />
+
       <div className="App" id="outer-container">
         <Nav outerContainerId={'outer-container'} pageWrapId={'page-wrap'} />
-        <Header />
+
         <div id="page-wrap">
           <Switch location={location} key={location.pathname}>
             <Route
@@ -51,7 +52,6 @@ function App() {
             <Route path="/contact" component={Contact} />
           </Switch>
         </div>
-        <Footer />
       </div>
     </AnimatePresence>
   );

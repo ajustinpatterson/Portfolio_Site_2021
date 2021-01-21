@@ -1,23 +1,21 @@
 .about-container {
   font-family: 'Roboto Slab', serif;
-  height: 83vh;
-  margin: 5% 3%;
+  height: 80vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  .intro-body {
-    .pic-and-hello {
-      display: flex;
-      .intro-body-text {
-        margin: auto 2%;
-      }
-      .about-image {
-        margin: 1%;
-        max-width: 25%;
-        border-radius: 16px;
-      }
+  margin: 5% 1%;
+  font-size: 1.1em;
+  .pic-and-hello {
+    .intro-body-text {
+      margin: 2% auto;
+      margin-left: 8%;
     }
+    .about-image {
+      margin: 8% 10% 0;
+      max-width: 90%;
+      border-radius: 16px;
+    }
+  }
+  .about-description {
     a {
       text-decoration: none;
     }
@@ -27,9 +25,8 @@
     a:hover {
       opacity: 50%;
     }
-  }
-  p {
-    font-size: 1.2em;
-    margin: 4% 10%;
+    #text {
+      margin: 5.4% 10%;
+    }
   }
 }

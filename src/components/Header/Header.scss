@@ -1,8 +1,12 @@
 .header {
+  width: 98vw;
+  height: 5%;
+  background-color: white;
   display: flex;
-  position: static;
+  position: fixed;
   justify-content: flex-end;
-  margin: 1em;
+  padding: 1em;
+  top: 0;
 }
 .nav-btn {
   background-color: #fff;

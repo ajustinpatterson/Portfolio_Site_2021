@@ -5,7 +5,7 @@ import './Resume.scss';
 
 const Resume = () => {
   return (
-    <motion.div id="resume">
+    <motion.div id="resume" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
       <iframe
         title="C/V"
         className="resume"
