@@ -51,6 +51,16 @@ const Nav = ({
         Portfolio
       </Link>
       <Link
+        id="portfolio"
+        className="menu-item"
+        to="/resume"
+        onClick={() => {
+          handleBurgerClick();
+        }}
+      >
+        Resume
+      </Link>
+      <Link
         id="about"
         className="menu-item"
         to="/about"
