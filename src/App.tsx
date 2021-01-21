@@ -5,6 +5,7 @@ import { Switch, Route, useLocation, useHistory } from 'react-router-dom';
 import Nav from './components/Nav/Nav';
 import FrontPage from './containers/FrontPage/FrontPage';
 import Portfolio from './containers/Portfolio/Portfolio';
+import Resume from './containers/Resume/Resume';
 import About from './containers/About/About';
 import Contact from './components/Contact/Contact';
 
@@ -45,6 +46,7 @@ function App() {
               )}
             />
             <Route path="/portfolio" component={Portfolio} />
+            <Route path="/resume" component={Resume} />
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />
           </Switch>
