@@ -6,17 +6,18 @@
   font-size: 1.1em;
   .pic-and-hello {
     .intro-body-text {
-      margin: 10% auto;
+      margin: 7% auto;
       margin-left: 8%;
     }
     .about-image {
       margin: 8% 10% 0;
-      max-width: 70%;
+      max-width: 80%;
       border-radius: 16px;
     }
   }
   .about-description {
     a {
+      color: black;
       text-decoration: none;
     }
     a:visited {

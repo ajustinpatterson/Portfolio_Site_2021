@@ -68,10 +68,7 @@ const About = () => {
             . Words are my first passion, and I spend as much time reading and
             writing them as I can. I'm also a wannabe blues guitarist, and fan
             of vintage bicycles (what can I say? I guess I just really like
-            fixing things).
-          </p>
-          <p id="text">
-            Please do not hesitate to
+            fixing things :) Please do not hesitate to
             <a href="mailto:ajustinpatterson@outlook.com"> get in touch</a> if I
             can be of any service to you.
           </p>
