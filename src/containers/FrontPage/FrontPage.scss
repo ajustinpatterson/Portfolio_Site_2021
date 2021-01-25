@@ -4,7 +4,7 @@
   font-family: 'Roboto Slab', serif;
   display: flex;
   height: 80vh;
-  margin: 5% 1%;
+  margin: 5% 1% 0;
   .text {
     #blurb {
       font-size: 1.2em;
@@ -35,8 +35,22 @@
   }
 }
 .profile-pic {
-  max-width: 70%;
-  max-height: 85%;
+  max-width: 65%;
+  max-height: 75%;
   border-radius: 16px;
   margin-right: 0.75em;
+}
+.skill-trees {
+  font-family: 'Roboto Slab', serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  #main-skill {
+    max-width: 20%;
+    margin: auto auto;
+    li {
+      text-align: left;
+    }
+  }
 }
