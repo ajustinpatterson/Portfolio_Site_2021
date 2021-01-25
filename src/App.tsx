@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { Switch, Route, useLocation, useHistory } from 'react-router-dom';
-
+//
 import Nav from './components/Nav/Nav';
 import FrontPage from './containers/FrontPage/FrontPage';
 import Portfolio from './containers/Portfolio/Portfolio';
@@ -20,15 +20,11 @@ function App() {
 
   useEffect(() => {
     const unlisten = history.listen(() => {
-      console.log('is first mount: ', isFirstMount);
-
       isFirstMount && setIsFirstMount(false);
     });
 
     return unlisten;
   }, [history, isFirstMount]);
-
-  console.log('location: ', location);
 
   return (
     <AnimatePresence exitBeforeEnter>
