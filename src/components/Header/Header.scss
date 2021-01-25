@@ -2,7 +2,7 @@
   width: 98vw;
   height: 5%;
   background-color: white;
-  opacity: 90%;
+  opacity: 0.9;
   display: flex;
   position: fixed;
   justify-content: flex-end;
@@ -17,5 +17,5 @@
   border-radius: 100%;
 }
 .nav-btn:hover {
-  opacity: 50%;
+  opacity: 0.5;
 }
