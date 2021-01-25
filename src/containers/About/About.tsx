@@ -13,7 +13,9 @@ const About = () => {
         <div className="pic-and-hello">
           <img className="about-image" src={inariPic} alt="placeholder"></img>
           <div className="intro-body-text">
-            <h2 className="intro-title">This is me</h2>
+            <h2 className="intro-title" style={{ textAlign: 'center' }}>
+              This is me
+            </h2>
             <p id="text">
               in Japan, in 2018. You could say I've got a bit of wanderlust.
               I've called a few places home. Born in Ventura County, California,
