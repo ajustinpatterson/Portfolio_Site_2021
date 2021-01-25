@@ -58,7 +58,7 @@ const Contact = () => {
         <textarea
           name="message"
           placeholder="Type your message here...."
-          style={{ height: '50%' }}
+          style={{ height: '50%', width: '89%' }}
           tabIndex={5}
           required
         ></textarea>

@@ -1,7 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+
 import profile from '../../assets/Profile.jpg';
+import unicoder from '../../assets/unicoder.svg';
+import backend from '../../assets/server-network-alt.svg';
+import care from '../../assets/heart.svg';
+
 import './FrontPage.scss';
 
 const FrontPage = () => {
@@ -37,6 +42,13 @@ const FrontPage = () => {
         alt="profile"
         title="Photo by Berta Vilanova :)"
       />
+      <div className="skill-trees">
+        <div id="main-skill">
+          <ul id="specific-skills">
+            <li></li>
+          </ul>
+        </div>
+      </div>
     </motion.div>
   );
 };
