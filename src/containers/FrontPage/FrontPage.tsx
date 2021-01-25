@@ -2,8 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
-import Footer from '../../components/Footer/Footer';
-
 import profile from '../../assets/Profile.jpg';
 import brackets from '../../assets/brackets-curly.svg';
 import backend from '../../assets/server-network-alt.svg';
@@ -98,7 +96,6 @@ const FrontPage = () => {
           </ul>
         </div>
       </div>
-      <Footer />
     </motion.div>
   );
 };
