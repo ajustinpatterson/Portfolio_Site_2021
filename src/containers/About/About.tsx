@@ -36,7 +36,7 @@ const About = () => {
           </p>
           <p id="text">
             I've done some different jobs in my life, including a long stint in
-            the service industry, some basic freelance SEO, running a modest
+            the service industry, running a modest
             <a
               href="https://pj9434.wixsite.com/alan-j-patterson"
               rel="noreferrer"
@@ -48,11 +48,11 @@ const About = () => {
             , and teaching English abroad.
           </p>
           <p id="text">
-            With backgrounds in education, high-pressure work environments, and
-            being a one-man business operation, I'm committed to writing the
-            most elegant, easily-maintainable code possible, and am capable of
-            communicating handily both on a technical and product level. But my
-            greatest strength is team work.
+            With a background in education, service, and having been a one-man
+            business operation, I'm committed to writing the most elegant,
+            easily-maintainable code possible, and am capable of communicating
+            handily both on the technical and product level. But my greatest
+            strength is teamwork.
           </p>
           <p id="text">
             In my free time, I'm known to walk around Barcelona and snap photos
@@ -65,9 +65,10 @@ const About = () => {
               {' '}
               travel/photo blog
             </a>
-            . I'm also an avid writer, a wannabe blues guitarist, and fan of
-            vintage bicycles (what can I say? It turns out, I'm just kind of a
-            fan of fixing things).
+            . Words are my first passion, and I spend as much time reading and
+            writing them as I can. I'm also a wannabe blues guitarist, and fan
+            of vintage bicycles (what can I say? I guess I just really like
+            fixing things).
           </p>
           <p id="text">
             Please do not hesitate to
