@@ -1,14 +1,20 @@
 .footer {
+  border-top: 1px solid black;
+  margin-top: 2em;
+  flex: 1;
+  margin-top: auto;
+  height: 2em;
   font-family: 'Roboto Slab', serif;
-  font-size: 0.8em;
-  display: flex;
-  margin-top: 1em;
-  margin-left: 1%;
-  .spacer {
-    margin-left: 30%;
+  font-size: 0.7em;
+  text-align: center;
+  a {
+    color: black;
+    text-decoration: none;
   }
-  #r {
-    margin-right: 0;
-    text-align: right;
+  a:visited {
+    color: black;
+  }
+  a:hover {
+    opacity: 0.5;
   }
 }

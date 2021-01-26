@@ -10,6 +10,7 @@ import About from './containers/About/About';
 import Contact from './components/Contact/Contact';
 
 import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 
 import './App.css';
 
@@ -49,6 +50,7 @@ function App() {
           </Switch>
         </div>
       </div>
+      <Footer />
     </AnimatePresence>
   );
 }

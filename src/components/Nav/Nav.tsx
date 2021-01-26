@@ -23,12 +23,17 @@ const Nav = ({
     setMenuOpen(true);
   };
 
+  const handleMenuClose = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <Menu
       pageWrapId={pageWrapId}
       outerContainerId={outerContainerId}
       isOpen={menuOpen}
       onOpen={handleMenuOpen}
+      onClose={handleMenuClose}
     >
       <Link
         id="home"

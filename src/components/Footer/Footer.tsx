@@ -5,12 +5,14 @@ const Footer = () => {
   return (
     <div className="footer">
       <p id="l">
-        This site built from scratch with React (hooks), Typescript, SASS,
+        This site baked from scratch with React (hooks), Typescript, SASS,
         react-burger-menu, FramerMotion, and email.js. Source code available
-        here.
+        <a href="https://github.com/ajustinpatterson/Portfolio_Site_2021.git">
+          {' '}
+          here
+        </a>
+        . ©twenty-twenty-one
       </p>
-      <div className="spacer"></div>
-      <p id="r">© Justin Patterson 2021</p>
     </div>
   );
 };
