@@ -88,11 +88,13 @@ const FrontPage = () => {
         </div>
         <div id="main-skill">
           <img id="care" src={care} alt="care" style={{ maxWidth: '28%' }} />
-          <h3>People</h3>
+          <h3>Soft Skills</h3>
           <ul id="specific-skills">
-            <li>Responsible team member</li>
-            <li>Proven excellence in communication</li>
-            <li>Long record in collaborative excellence</li>
+            <li>Committed to the team</li>
+            <li>Highly developed presenter</li>
+            <li>Collaboration is learning</li>
+            <li>Listen first, ask more questions</li>
+            <li>1% better every day</li>
           </ul>
         </div>
       </div>
