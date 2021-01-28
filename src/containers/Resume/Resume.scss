@@ -1,6 +1,14 @@
-.resume {
-  margin: 5% 1%;
-  width: 90vw;
-  height: 77vh;
-  border: none;
+@media screen and (min-width: 1300px) {
+  .resume {
+    margin: 5% 1%;
+    width: 90vw;
+    height: 77vh;
+    border: none;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .resume {
+    display: none;
+  }
 }

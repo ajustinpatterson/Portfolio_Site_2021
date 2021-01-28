@@ -12,6 +12,10 @@ const Footer = () => {
           here
         </a>
         . ©twenty-twenty-one
+        <p id="small-screen">
+          This site is currently optimized for desktop browsers. Check back soon
+          for responsive updates :)
+        </p>
       </p>
     </div>
   );

@@ -90,7 +90,7 @@ const FrontPage = () => {
           <img id="care" src={care} alt="care" style={{ maxWidth: '28%' }} />
           <h3>Soft Stuff</h3>
           <ul id="specific-skills">
-            <li>Committed to the team</li>
+            <li>Agile methodologies</li>
             <li>Highly developed presenter</li>
             <li>Collaboration is learning</li>
             <li>Listen first, ask more questions</li>

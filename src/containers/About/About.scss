@@ -1,34 +1,42 @@
-.about-container {
-  font-family: 'Roboto Slab', serif;
-  height: 80vh;
-  display: flex;
-  margin: 4% 1%;
-  font-size: 1.1em;
-  text-align: left;
-  .pic-and-hello {
-    .intro-body-text {
-      margin: 7% auto;
-      margin-left: 8%;
+@media screen and (min-width: 1300px) {
+  .about-container {
+    font-family: 'Roboto Slab', serif;
+    height: 80vh;
+    display: flex;
+    margin: 4% 1%;
+    font-size: 1.1em;
+    text-align: left;
+    .pic-and-hello {
+      .intro-body-text {
+        margin: 7% auto;
+        margin-left: 8%;
+      }
+      .about-image {
+        margin: 8% 10% 0;
+        max-width: 80%;
+        border-radius: 16px;
+      }
     }
-    .about-image {
-      margin: 8% 10% 0;
-      max-width: 80%;
-      border-radius: 16px;
+    .about-description {
+      a {
+        color: black;
+        text-decoration: none;
+      }
+      a:visited {
+        color: black;
+      }
+      a:hover {
+        opacity: 0.5;
+      }
+      #text {
+        margin: 5.4% 10%;
+      }
     }
   }
-  .about-description {
-    a {
-      color: black;
-      text-decoration: none;
-    }
-    a:visited {
-      color: black;
-    }
-    a:hover {
-      opacity: 0.5;
-    }
-    #text {
-      margin: 5.4% 10%;
-    }
+}
+
+@media screen and (max-width: 1300px) {
+  .about-container {
+    display: none;
   }
 }
