@@ -93,7 +93,7 @@ const FrontPage = () => {
             <li>Agile methodologies</li>
             <li>Highly developed presenter</li>
             <li>Collaboration is learning</li>
-            <li>Listen first, ask more questions</li>
+            <li>Listening is primary</li>
             <li>1% better every day</li>
           </ul>
         </div>
