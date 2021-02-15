@@ -4,8 +4,8 @@ import { motion } from 'framer-motion';
 import './Portfolio.scss';
 
 import swift from '../../assets/swift-logo-big-500x500.png';
-import light from '../../assets/light_box.png';
-import simple from '../../assets/simplefi-logo-transp.png';
+import light from '../../assets/light_box-logo.png';
+import simple from '../../assets/simplefi-logo.png';
 
 const Portfolio = () => {
   return (
@@ -14,15 +14,14 @@ const Portfolio = () => {
         <h1 className="title">Portfolio</h1>
         <div className="portfolio-wrapper">
           <div className="project">
-            <img
-              className="project-img"
-              style={{ width: '100%' }}
-              src={swift}
-              alt="placeholder"
-            />
+            <img className="project-img" src={swift} alt="placeholder" />
             <div className="project-text">
-              <a href="https://github.com/ajustinpatterson/Swift-Video-Meetings">
-                <h2>Swift Video Meetings</h2>
+              <a
+                href="https://github.com/ajustinpatterson/Swift-Video-Meetings"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <h2 style={{ color: 'black' }}>Swift Video Meetings</h2>
               </a>
               <p className="tech-stack">
                 Technologies: React, Typescript, Express, Sequelize, PostgreSQL,
@@ -42,15 +41,14 @@ const Portfolio = () => {
             </div>
           </div>
           <div className="project">
-            <img
-              className="project-img"
-              style={{ width: '53%', marginLeft: '5%' }}
-              src={light}
-              alt="placeholder"
-            />
-            <div className="project-text" style={{ marginLeft: '5%' }}>
-              <a href="https://github.com/ajustinpatterson/light-box-solo-project">
-                <h2>light_box</h2>
+            <img className="project-img" src={light} alt="placeholder" />
+            <div className="project-text">
+              <a
+                href="https://github.com/ajustinpatterson/light-box-solo-project"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <h2 style={{ color: 'black' }}>light_box</h2>
               </a>
               <p className="tech-stack">
                 Technologies: React Native/Expo, Express, Sequelize, PostgreSQL,
@@ -68,15 +66,14 @@ const Portfolio = () => {
             </div>
           </div>
           <div className="project">
-            <img
-              className="project-img"
-              style={{ width: '20%', marginLeft: '7%' }}
-              src={simple}
-              alt="placeholder"
-            />
-            <div className="project-text" style={{ marginLeft: '8%' }}>
-              <a href="https://github.com/raphael-mazet/SimpleFi">
-                <h2>SimpleFi</h2>
+            <img className="project-img" src={simple} alt="placeholder" />
+            <div className="project-text">
+              <a
+                href="https://github.com/raphael-mazet/SimpleFi"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <h2 style={{ color: 'black' }}>SimpleFi</h2>
               </a>
               <p className="tech-stack">
                 Technologies: React, Typescript, JWT auth, Express, PostgreSQL,
