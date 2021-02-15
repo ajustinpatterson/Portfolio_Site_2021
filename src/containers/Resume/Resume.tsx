@@ -1,17 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
+import resume from '../../assets/Justin_Patterson_Resume_JPG.jpg';
+
 import './Resume.scss';
 
 const Resume = () => {
   return (
     <motion.div id="resume" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-      <iframe
-        title="C/V"
-        className="resume"
-        src="https://drive.google.com/file/d/1Ugr2CoE8B3jVv3Mus88yKNBJYJuIdpbT/preview"
-        allowFullScreen={true}
-      ></iframe>
+      <img src={resume} alt="C/V" className="resume" />
     </motion.div>
   );
 };

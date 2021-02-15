@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 import './Portfolio.scss';
 
-import swift from '../../assets/swift-logo-big.png';
+import swift from '../../assets/swift-logo-big-500x500.png';
 import light from '../../assets/light_box.png';
 import simple from '../../assets/simplefi-logo-transp.png';
 
@@ -16,7 +16,7 @@ const Portfolio = () => {
           <div className="project">
             <img
               className="project-img"
-              style={{ width: '35%' }}
+              style={{ width: '100%' }}
               src={swift}
               alt="placeholder"
             />
@@ -44,7 +44,7 @@ const Portfolio = () => {
           <div className="project">
             <img
               className="project-img"
-              style={{ width: '25%', marginLeft: '5%' }}
+              style={{ width: '53%', marginLeft: '5%' }}
               src={light}
               alt="placeholder"
             />
