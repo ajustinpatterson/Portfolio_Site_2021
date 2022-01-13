@@ -22,7 +22,7 @@ const FrontPage = () => {
             in React and Node.js, with an emphasis on clean, modern design.{' '}
           </p>
           <p id="blurb">
-            I've worked in teams of 2-4 developers with aggressive deadlines to
+            I've worked in teams of 2-10 developers with aggressive deadlines to
             deliver varied user experiences on CI/CD platforms such as Heroku
             and Netlify, with deep roots in Git version control and testing
             suites such as Mocha/Chai and Jest. My background in education means

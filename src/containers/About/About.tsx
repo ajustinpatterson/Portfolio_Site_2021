@@ -26,7 +26,7 @@ const About = () => {
         </div>
         <div className="about-description">
           <p id="text">
-            My developer journey started a year and a half ago, learning a bit
+            My developer journey started in 2018, learning a bit
             of Java on Youtube. It quickly became an addiction once I started
             fiddling with JavaScript at the end of 2019.
           </p>
@@ -50,7 +50,7 @@ const About = () => {
             , and teaching English abroad.
           </p>
           <p id="text">
-            With a background in education, service, and having been a one-man
+            With a strong foundation in agile development, background in education and service, and having been a one-man
             business operation, I'm committed to writing the most elegant,
             easily-maintainable code possible, and am capable of communicating
             handily both on the technical and product level. But my greatest
