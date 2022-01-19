@@ -31,13 +31,20 @@ const About = () => {
             fiddling with JavaScript at the end of 2019.
           </p>
           <p id="text">
-            Now, I'm working on more front end
-            <Link to="/Portfolio"> challenges </Link> and sharpening my skills
-            on custom React applications while dipping into back end
-            technologies like Golang and Java.
+            After enrolling in a bootcamp and getting involved in some front end
+            <Link to="/Portfolio"> challenges, </Link> I'm now working as a full-stack engineer at a <a
+              href="https://www.openbravo.com"
+              rel="noreferrer"
+              target="_blank"
+            >
+              {' '}
+              great company
+              {' '}
+              </a>
+             on a sprawling commerce solution with everything from SQL scripts to Java.
           </p>
           <p id="text">
-            I've done some different jobs in my life, including a long stint in
+            I've lived more than one professional life, including a long stint in
             the service industry, running a modest
             <a
               href="https://pj9434.wixsite.com/alan-j-patterson"
