@@ -11,7 +11,7 @@ const Footer = () => {
           {' '}
           here
         </a>
-        . ©twenty-twenty-one
+        . ©twenty-twenty-four
         <p id="small-screen">
           This site is currently optimized for desktop browsers. Check back soon
           for responsive updates :)

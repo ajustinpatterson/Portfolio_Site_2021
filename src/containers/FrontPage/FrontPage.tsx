@@ -18,12 +18,12 @@ const FrontPage = () => {
           <h1 className="my-name">Justin Patterson</h1>
           <h4>FULL STACK SOFTWARE DEVELOPER</h4>
           <p id="blurb">
-            Hi! I'm Justin, a developer living in Barcelona, Spain. I specialize
+            Hi! I'm Justin, a full stack developer living in Barcelona, Spain. I specialize
             in React and Node.js, with an emphasis on clean, modern design.{' '}
           </p>
           <p id="blurb">
             I've worked in teams of 2-10 developers with aggressive deadlines to
-            deliver varied user experiences on CI/CD platforms such as Heroku
+            deliver varied user experiences on CI/CD platforms such as Jenkins, Heroku
             and Netlify, with deep roots in Git version control and testing
             suites such as Mocha/Chai and Jest. My background in education means
             that I strive to write code that is semantic, well-organized, and
@@ -94,7 +94,7 @@ const FrontPage = () => {
             <li>Highly developed presenter</li>
             <li>Collaboration is learning</li>
             <li>Listening is primary</li>
-            <li>1% better every day</li>
+            <li>Curiosity drives everything</li>
           </ul>
         </div>
       </div>
