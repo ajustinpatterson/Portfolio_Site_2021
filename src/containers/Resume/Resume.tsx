@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-import resume from '../../assets/Justin_Patterson_Resume_JPG.jpg';
+import resume from '../../assets/cv-alanjpatterson-2024.jpg';
 
 import './Resume.scss';
 
