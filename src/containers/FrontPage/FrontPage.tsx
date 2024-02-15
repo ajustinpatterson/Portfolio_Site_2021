@@ -68,9 +68,9 @@ const FrontPage = () => {
           />
           <h3>Back-end</h3>
           <ul id="specific-skills">
+            <li>Java</li>
             <li>Express</li>
             <li>RESTful APIs</li>
-            <li>GraphQL/Apollo</li>
             <li>SQL/Sequelize</li>
             <li>MongoDB/Mongoose</li>
           </ul>
