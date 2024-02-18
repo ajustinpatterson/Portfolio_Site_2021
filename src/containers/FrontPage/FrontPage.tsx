@@ -68,14 +68,14 @@ const FrontPage = () => {
           />
           <h3>Back-end</h3>
           <ul id="specific-skills">
-            <li>Java</li>
             <li>Express</li>
             <li>RESTful APIs</li>
+            <li>GraphQL/Apollo</li>
             <li>SQL/Sequelize</li>
-            <li>MongoDB/Mongoose</li>
+            <li>MongoDB/ Mongoose</li>
           </ul>
         </div>
-        <div id="main-skill">
+        <div id="main-skill-tools">
           <img id="tools" src={tools} alt="tools" style={{ maxWidth: '45%' }} />
           <h3>Tools</h3>
           <ul id="specific-skills">
@@ -86,8 +86,8 @@ const FrontPage = () => {
             <li>Mocha/Chai/Jest</li>
           </ul>
         </div>
-        <div id="main-skill">
-          <img id="care" src={care} alt="care" style={{ maxWidth: '28%' }} />
+        <div id="main-skill-care">
+          <img id="care" src={care} alt="care" style={{ maxWidth: '45%' }} />
           <h3>Soft Stuff</h3>
           <ul id="specific-skills">
             <li>Agile methodologies</li>

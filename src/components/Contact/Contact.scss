@@ -1,4 +1,4 @@
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 769px) {
   .contact-container {
     height: 77vh;
     font-family: 'Roboto Slab', serif;
@@ -42,8 +42,46 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
   .contact-container {
-    display: none;
+    height: 77vh;
+    font-family: 'Roboto Slab', serif;
+    margin: 20% 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2 {
+      text-align: center;
+    }
+    form {
+      width: 80%;
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      input {
+        border-radius: 5px;
+        text-indent: 3%;
+        margin: 3% 4%;
+        height: 40%;
+      }
+      textarea {
+        border-radius: 5px;
+        margin-left: 5%;
+        margin-top: 15%;
+        text-indent: 1%;
+        resize: none;
+      }
+      button {
+        background-color: white;
+        margin-top: 3%;
+        font-size: medium;
+        align-self: center;
+        text-align: center;
+        border: 1px solid #858585;
+        border-radius: 8px;
+        width: 30%;
+        height: 8%;
+      }
+    }
   }
 }

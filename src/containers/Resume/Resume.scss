@@ -1,4 +1,4 @@
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 769px) {
   .resume {
     margin: 5% 1%;
     width: 65vw;
@@ -6,8 +6,10 @@
   }
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 768px) {
   .resume {
-    display: none;
+    margin: 20% 0 0 0;
+    width: 100vw;
+    border: none;
   }
 }

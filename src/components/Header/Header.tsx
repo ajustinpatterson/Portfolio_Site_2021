@@ -10,7 +10,7 @@ const Header = () => {
     <div className="header">
       <div className="nav-btn">
         <a
-          href="http://www.instagram.com/ajustinpatterson"
+          href="https://www.instagram.com/ajustinpatterson"
           target="_blank"
           rel="noreferrer"
         >
@@ -18,9 +18,9 @@ const Header = () => {
         </a>
       </div>
 
-      <div className="nav-btn">
+      <div className="nav-btn-medium">
         <a
-          href="http://ajustinpatterson.medium.com"
+          href="https://ajustinpatterson.medium.com/"
           target="_blank"
           rel="noreferrer"
         >
@@ -28,9 +28,9 @@ const Header = () => {
         </a>
       </div>
 
-      <div className="nav-btn">
+      <div className="nav-btn-lnkdn">
         <a
-          href="http://www.linkedin.com/in/ajustinpatterson"
+          href="https://www.linkedin.com/in/ajustinpatterson"
           target="_blank"
           rel="noreferrer"
         >
@@ -38,9 +38,9 @@ const Header = () => {
         </a>
       </div>
 
-      <div className="nav-btn">
+      <div className="nav-btn-github">
         <a
-          href="http://github.com/ajustinpatterson"
+          href="https://github.com/ajustinpatterson"
           target="_blank"
           rel="noreferrer"
         >
