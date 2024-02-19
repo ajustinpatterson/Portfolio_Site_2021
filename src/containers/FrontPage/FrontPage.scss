@@ -116,6 +116,7 @@
     border-radius: 16px;
   }
   .skill-trees {
+    width: 95%;
     position: absolute;
     font-family: 'Roboto Slab', serif;
     display: grid;
@@ -133,7 +134,7 @@
     }
     #main-skill {
       max-width: 100%;
-      margin: 15% 1%;
+      margin-left: 3%;
       ul {
         list-style-type: circle;
         text-align: left;
@@ -141,7 +142,7 @@
     }
     #main-skill-tools {
       max-width: 100%;
-      margin: 0 1% 20% 1%;
+      margin: 0 0 0 3%;
       ul {
         list-style-type: circle;
         text-align: left;
