@@ -11,7 +11,7 @@ const Footer = () => {
           {' '}
           here
         </a>
-        . ©twenty-twenty-four
+        . ©twenty-twenty-six
       </p>
     </div>
   );
