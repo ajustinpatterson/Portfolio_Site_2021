@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
@@ -24,13 +23,17 @@ const FrontPage = () => {
           </p>
           <p id="blurb">
             I've worked in teams of 2-10 developers with aggressive deadlines to
-            deliver varied user experiences on CI/CD platforms such as Jenkins,
-            Heroku and Netlify, with deep roots in Git version control and
-            testing suites such as Mocha/Chai and Jest. My background in
-            education means that I strive to write code that is semantic,
-            well-organized, and tells a story, all while utilizing honed
-            presentation skills and changing hats every minute. Have a look at
-            my
+            deliver clean user experiences on CI/CD platforms such as Gitlab,
+            Jenkins, Heroku and Netlify, with deep roots in Git version control
+            and testing suites such as Mocha/Chai, Jest, Cucumber and
+            Playwright.
+          </p>
+          <p id="blurb">
+            My background in education means that I strive to write code that is
+            semantic, well-organized, and tells a story, all while utilizing
+            honed presentation skills and changing hats all the time. I am also
+            well acquainted with AI tools like Claude and GitHub Copilot. Have a
+            look at my
             <Link to="/portfolio"> portfolio </Link> to see my work, and feel
             free to <a href="mailto:ajustinpatterson@outlook.com"> connect </a>
             if you fancy a chat!
