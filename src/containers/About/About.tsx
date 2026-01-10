@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
@@ -26,26 +25,28 @@ const About = () => {
         </div>
         <div className="about-description">
           <p id="text">
-            My developer journey started in 2018, learning a bit
-            of Java on Youtube. It quickly became an addiction once I started
-            fiddling with JavaScript at the end of 2019.
+            My developer journey started in 2018, learning a bit of Java on
+            Youtube. It quickly became an addiction once I started fiddling with
+            JavaScript at the end of 2019.
           </p>
           <p id="text">
             After enrolling in a bootcamp and getting involved in some front end
-            <Link to="/Portfolio"> challenges, </Link> I'm now working as a full-stack engineer at a <a
+            <Link to="/Portfolio"> challenges, </Link> I'm now working as a
+            full-stack engineer at a{' '}
+            <a
               href="https://www.openbravo.com"
               rel="noreferrer"
               target="_blank"
             >
               {' '}
-              great company
-              {' '}
-              </a>
-             on a sprawling commerce solution with everything from SQL scripts to Java.
+              great company{' '}
+            </a>
+            on a sprawling commerce solution with everything from SQL scripts to
+            Java.
           </p>
           <p id="text">
-            I've lived more than one professional life, including a long stint in
-            the service industry, running a modest
+            I've lived more than one professional life, including a long stint
+            in the service industry, running a modest
             <a
               href="https://pj9434.wixsite.com/alan-j-patterson"
               rel="noreferrer"
@@ -57,11 +58,11 @@ const About = () => {
             , and teaching English abroad.
           </p>
           <p id="text">
-            With a strong foundation in agile development, background in education and service, and having been a one-man
-            business operation, I'm committed to writing the most elegant,
-            easily-maintainable code possible, and am capable of communicating
-            handily both on the technical and product level. But my greatest
-            strength is teamwork.
+            With a strong foundation in agile development, background in
+            education and service, and having been a one-man business operation,
+            I'm committed to writing the most elegant, easily-maintainable code
+            possible, and am capable of communicating handily both on the
+            technical and product level. But my greatest strength is teamwork.
           </p>
           <p id="text">
             In my free time, I'm known to walk around Barcelona and snap photos
