@@ -11,13 +11,14 @@ import './FrontPage.scss';
 import labels from '../../master.json';
 
 const FrontPage = () => {
+  const { frontPage } = labels;
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
       <div className="container">
         <div className="text">
           <h1 className="my-name">Justin Patterson</h1>
-          <h4>FULL STACK SOFTWARE DEVELOPER</h4>
-          {labels.frontPageBlurbs.map((blurb: string, index: number) => (
+          <h4>{frontPage.title}</h4>
+          {labels.frontPage.blurbs.map((blurb: string, index: number) => (
             <p key={index} id="blurb">
               {blurb}
             </p>
@@ -39,9 +40,9 @@ const FrontPage = () => {
             alt="unicoder"
             className="skill-img"
           />
-          <h3>{labels.skills[0].title}</h3>
+          <h3>{frontPage.skills[0].title}</h3>
           <ul id="specific-skills">
-            {labels.skills[0].items.map((item: string, index: number) => (
+            {frontPage.skills[0].items.map((item: string, index: number) => (
               <li key={index}>{item}</li>
             ))}
           </ul>
@@ -53,27 +54,27 @@ const FrontPage = () => {
             alt="back-end"
             className="skill-img"
           />
-          <h3>{labels.skills[1].title}</h3>
+          <h3>{frontPage.skills[1].title}</h3>
           <ul id="specific-skills">
-            {labels.skills[1].items.map((item: string, index: number) => (
+            {frontPage.skills[1].items.map((item: string, index: number) => (
               <li key={index}>{item}</li>
             ))}
           </ul>
         </div>
         <div id="main-skill-tools">
           <img id="tools" src={tools} alt="tools" className="skill-img" />
-          <h3>{labels.skills[2].title}</h3>
+          <h3>{frontPage.skills[2].title}</h3>
           <ul id="specific-skills">
-            {labels.skills[2].items.map((item: string, index: number) => (
+            {frontPage.skills[2].items.map((item: string, index: number) => (
               <li key={index}>{item}</li>
             ))}
           </ul>
         </div>
         <div id="main-skill-care">
           <img id="care" src={care} alt="care" className="skill-img" />
-          <h3>{labels.skills[3].title}</h3>
+          <h3>{frontPage.skills[3].title}</h3>
           <ul id="specific-skills">
-            {labels.skills[3].items.map((item: string, index: number) => (
+            {frontPage.skills[3].items.map((item: string, index: number) => (
               <li key={index}>{item}</li>
             ))}
           </ul>
