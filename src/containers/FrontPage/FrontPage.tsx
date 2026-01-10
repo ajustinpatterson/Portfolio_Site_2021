@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
 
 import profile from '../../assets/Profile.jpg';
 import brackets from '../../assets/brackets-curly.svg';
@@ -9,6 +8,13 @@ import care from '../../assets/heart.svg';
 
 import './FrontPage.scss';
 
+import { frontPageBlurbs } from '../../master';
+
+type Skill = {
+  title: string;
+  details: string[];
+};
+
 const FrontPage = () => {
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
@@ -16,28 +22,11 @@ const FrontPage = () => {
         <div className="text">
           <h1 className="my-name">Justin Patterson</h1>
           <h4>FULL STACK SOFTWARE DEVELOPER</h4>
-          <p id="blurb">
-            Hi! I'm Justin, a full stack developer living in Barcelona, Spain. I
-            specialize in React and Node.js, with an emphasis on clean, modern
-            design.{' '}
-          </p>
-          <p id="blurb">
-            I've worked in teams of 2-10 developers with aggressive deadlines to
-            deliver clean user experiences on CI/CD platforms such as Gitlab,
-            Jenkins, Heroku and Netlify, with deep roots in Git version control
-            and testing suites such as Mocha/Chai, Jest, Cucumber and
-            Playwright.
-          </p>
-          <p id="blurb">
-            My background in education means that I strive to write code that is
-            semantic, well-organized, and tells a story, all while utilizing
-            honed presentation skills and changing hats all the time. I am also
-            well acquainted with AI tools like Claude and GitHub Copilot. Have a
-            look at my
-            <Link to="/portfolio"> portfolio </Link> to see my work, and feel
-            free to <a href="mailto:ajustinpatterson@outlook.com"> connect </a>
-            if you fancy a chat!
-          </p>
+          {frontPageBlurbs.map((blurb: string, index: number) => (
+            <p key={index} id="blurb">
+              {blurb}
+            </p>
+          ))}
         </div>
         <img
           src={profile}
