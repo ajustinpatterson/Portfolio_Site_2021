@@ -8,12 +8,7 @@ import care from '../../assets/heart.svg';
 
 import './FrontPage.scss';
 
-import { frontPageBlurbs } from '../../master';
-
-type Skill = {
-  title: string;
-  details: string[];
-};
+import labels from '../../master.json';
 
 const FrontPage = () => {
   return (
@@ -22,7 +17,7 @@ const FrontPage = () => {
         <div className="text">
           <h1 className="my-name">Justin Patterson</h1>
           <h4>FULL STACK SOFTWARE DEVELOPER</h4>
-          {frontPageBlurbs.map((blurb: string, index: number) => (
+          {labels.frontPageBlurbs.map((blurb: string, index: number) => (
             <p key={index} id="blurb">
               {blurb}
             </p>
@@ -44,13 +39,11 @@ const FrontPage = () => {
             alt="unicoder"
             className="skill-img"
           />
-          <h3>Front-end</h3>
+          <h3>{labels.skills[0].title}</h3>
           <ul id="specific-skills">
-            <li>React/React Native/Redux</li>
-            <li>Angular</li>
-            <li>Storybook</li>
-            <li>SASS/CSS</li>
-            <li>FramerMotion</li>
+            {labels.skills[0].items.map((item: string, index: number) => (
+              <li key={index}>{item}</li>
+            ))}
           </ul>
         </div>
         <div id="main-skill">
@@ -60,35 +53,29 @@ const FrontPage = () => {
             alt="back-end"
             className="skill-img"
           />
-          <h3>Back-end</h3>
+          <h3>{labels.skills[1].title}</h3>
           <ul id="specific-skills">
-            <li>Express</li>
-            <li>RESTful APIs</li>
-            <li>GraphQL/Apollo</li>
-            <li>SQL/Sequelize</li>
-            <li>MongoDB/ Mongoose</li>
+            {labels.skills[1].items.map((item: string, index: number) => (
+              <li key={index}>{item}</li>
+            ))}
           </ul>
         </div>
         <div id="main-skill-tools">
           <img id="tools" src={tools} alt="tools" className="skill-img" />
-          <h3>Tools</h3>
+          <h3>{labels.skills[2].title}</h3>
           <ul id="specific-skills">
-            <li>Git</li>
-            <li>Typescript</li>
-            <li>Figma</li>
-            <li>Docker</li>
-            <li>Mocha/Chai/Jest</li>
+            {labels.skills[2].items.map((item: string, index: number) => (
+              <li key={index}>{item}</li>
+            ))}
           </ul>
         </div>
         <div id="main-skill-care">
           <img id="care" src={care} alt="care" className="skill-img" />
-          <h3>Soft Stuff</h3>
+          <h3>{labels.skills[3].title}</h3>
           <ul id="specific-skills">
-            <li>Agile methodologies</li>
-            <li>Highly developed presenter</li>
-            <li>Collaboration is learning</li>
-            <li>Listening is primary</li>
-            <li>Curiosity drives everything</li>
+            {labels.skills[3].items.map((item: string, index: number) => (
+              <li key={index}>{item}</li>
+            ))}
           </ul>
         </div>
       </div>
