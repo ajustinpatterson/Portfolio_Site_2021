@@ -42,7 +42,7 @@ const FrontPage = () => {
             id="unicoder"
             src={brackets}
             alt="unicoder"
-            style={{ maxWidth: '30%' }}
+            className="skill-img"
           />
           <h3>Front-end</h3>
           <ul id="specific-skills">
@@ -58,7 +58,7 @@ const FrontPage = () => {
             id="back-end"
             src={backend}
             alt="back-end"
-            style={{ maxWidth: '40%' }}
+            className="skill-img"
           />
           <h3>Back-end</h3>
           <ul id="specific-skills">
@@ -70,7 +70,7 @@ const FrontPage = () => {
           </ul>
         </div>
         <div id="main-skill-tools">
-          <img id="tools" src={tools} alt="tools" style={{ maxWidth: '45%' }} />
+          <img id="tools" src={tools} alt="tools" className="skill-img" />
           <h3>Tools</h3>
           <ul id="specific-skills">
             <li>Git</li>
@@ -81,7 +81,7 @@ const FrontPage = () => {
           </ul>
         </div>
         <div id="main-skill-care">
-          <img id="care" src={care} alt="care" style={{ maxWidth: '45%' }} />
+          <img id="care" src={care} alt="care" className="skill-img" />
           <h3>Soft Stuff</h3>
           <ul id="specific-skills">
             <li>Agile methodologies</li>
