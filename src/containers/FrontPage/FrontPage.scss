@@ -47,6 +47,9 @@
     justify-content: center;
     flex-direction: row;
     margin: 0 auto;
+    img {
+      max-width: 6rem;
+    }
     #main-skill {
       max-width: 20%;
       margin: auto auto;
