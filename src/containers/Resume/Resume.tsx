@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 
-import resume from '../../assets/cv-alanjpatterson-2024.jpg';
+import resume from '../../assets/CV-Justin-Patterson-2026.png';
 
 import './Resume.scss';
 
