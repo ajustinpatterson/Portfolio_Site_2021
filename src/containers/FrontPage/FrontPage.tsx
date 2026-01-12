@@ -10,15 +10,56 @@ import './FrontPage.scss';
 
 import labels from '../../master.json';
 
+type Justin = {
+  name: string;
+  title: string;
+  blurbs: string[];
+};
+
+type Skill = {
+  title: string;
+  image: string;
+  details: string[];
+};
+
 const FrontPage = () => {
-  const { frontPage } = labels;
+  const me: Justin = {
+    name: labels.frontPage.name,
+    title: labels.frontPage.title,
+    blurbs: labels.frontPage.blurbs,
+  };
+
+  const frontEnd: Skill = {
+    title: labels.frontPage.skills[0].title,
+    image: brackets,
+    details: labels.frontPage.skills[0].items,
+  };
+
+  const backEnd: Skill = {
+    title: labels.frontPage.skills[1].title,
+    image: backend,
+    details: labels.frontPage.skills[1].items,
+  };
+
+  const devOps: Skill = {
+    title: labels.frontPage.skills[2].title,
+    image: tools,
+    details: labels.frontPage.skills[2].items,
+  };
+
+  const softStuff: Skill = {
+    title: labels.frontPage.skills[3].title,
+    image: care,
+    details: labels.frontPage.skills[3].items,
+  };
+
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
       <div className="container">
         <div className="text">
-          <h1 className="my-name">Justin Patterson</h1>
-          <h4>{frontPage.title}</h4>
-          {labels.frontPage.blurbs.map((blurb: string, index: number) => (
+          <h1 className="my-name">{me.name}</h1>
+          <h4>{me.title}</h4>
+          {me.blurbs.map((blurb: string, index: number) => (
             <p key={index} id="blurb">
               {blurb}
             </p>
@@ -31,18 +72,17 @@ const FrontPage = () => {
           title="Photo by Berta Vilanova :)"
         />
       </div>
-
       <div className="skill-trees">
         <div id="main-skill">
           <img
             id="unicoder"
-            src={brackets}
+            src={frontEnd.image}
             alt="unicoder"
             className="skill-img"
           />
-          <h3>{frontPage.skills[0].title}</h3>
+          <h3>{frontEnd.title}</h3>
           <ul id="specific-skills">
-            {frontPage.skills[0].items.map((item: string, index: number) => (
+            {frontEnd.details.map((item: string, index: number) => (
               <li key={index}>{item}</li>
             ))}
           </ul>
@@ -50,31 +90,41 @@ const FrontPage = () => {
         <div id="main-skill">
           <img
             id="back-end"
-            src={backend}
+            src={backEnd.image}
             alt="back-end"
             className="skill-img"
           />
-          <h3>{frontPage.skills[1].title}</h3>
+          <h3>{backEnd.title}</h3>
           <ul id="specific-skills">
-            {frontPage.skills[1].items.map((item: string, index: number) => (
+            {backEnd.details.map((item: string, index: number) => (
               <li key={index}>{item}</li>
             ))}
           </ul>
         </div>
         <div id="main-skill-tools">
-          <img id="tools" src={tools} alt="tools" className="skill-img" />
-          <h3>{frontPage.skills[2].title}</h3>
+          <img
+            id="tools"
+            src={devOps.image}
+            alt="tools"
+            className="skill-img"
+          />
+          <h3>{devOps.title}</h3>
           <ul id="specific-skills">
-            {frontPage.skills[2].items.map((item: string, index: number) => (
+            {devOps.details.map((item: string, index: number) => (
               <li key={index}>{item}</li>
             ))}
           </ul>
         </div>
         <div id="main-skill-care">
-          <img id="care" src={care} alt="care" className="skill-img" />
-          <h3>{frontPage.skills[3].title}</h3>
+          <img
+            id="care"
+            src={softStuff.image}
+            alt="care"
+            className="skill-img"
+          />
+          <h3>{softStuff.title}</h3>
           <ul id="specific-skills">
-            {frontPage.skills[3].items.map((item: string, index: number) => (
+            {softStuff.details.map((item: string, index: number) => (
               <li key={index}>{item}</li>
             ))}
           </ul>
