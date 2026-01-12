@@ -100,9 +100,7 @@ const About = () => {
         <div className="pic-and-hello">
           <img className="about-image" src={hero.image} alt="placeholder"></img>
           <div className="intro-body-text">
-            <h2 className="intro-title" style={{ textAlign: 'center' }}>
-              {hero.title}
-            </h2>
+            <h2 className="intro-title">{hero.title}</h2>
             <p id="text">{hero.blurb}</p>
           </div>
         </div>

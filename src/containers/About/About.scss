@@ -4,44 +4,43 @@
     height: 80vh;
     display: flex;
     margin: 4% 1%;
-    font-size: 1.1em;
+    line-height: 1.7rem;
+    font-size: 1.2rem;
     text-align: left;
+    flex-flow: column wrap;
+    align-content: space-evenly;
     .pic-and-hello {
+      max-width: 40%;
+      max-height: 100%;
+      .intro-title {
+        text-align: center;
+      }
       .intro-body-text {
-        margin: 7% auto;
-        margin-left: 8%;
+        margin: 1rem 2rem;
       }
       .about-image {
-        margin: 8% 10% 0;
-        max-width: 80%;
+        max-height: 80%;
+        margin: 1rem;
         border-radius: 16px;
       }
     }
     .about-description {
-      a {
-        color: black;
-        text-decoration: none;
-      }
-      a:visited {
-        color: black;
-      }
-      a:hover {
-        opacity: 0.5;
-      }
+      max-width: 60%;
+      max-height: 100%;
       #text {
-        margin: 5.4% 1% 0;
+        margin: 1.5rem 2rem;
       }
-    }
-    .link-container {
-      display: flex;
-      margin: 1rem 3rem 0 0;
-      justify-content: flex-end;
-      .link {
-        text-decoration-line: underline;
-        margin-left: 1rem;
-      }
-      .link:hover {
-        opacity: 0.5;
+      .link-container {
+        display: flex;
+        justify-content: flex-end;
+        .link {
+          color: black;
+          text-decoration-line: underline;
+          margin-left: 1rem;
+        }
+        .link:hover {
+          opacity: 0.5;
+        }
       }
     }
   }
@@ -65,6 +64,18 @@
     .about-description {
       #text {
         margin: 5.4% 1rem;
+      }
+      .link-container {
+        display: flex;
+        justify-content: center;
+        .link {
+          color: black;
+          text-decoration-line: underline;
+          margin-left: 1rem;
+        }
+        .link:hover {
+          opacity: 0.5;
+        }
       }
     }
   }
