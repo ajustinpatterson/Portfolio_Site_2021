@@ -6,6 +6,13 @@ import swift from '../../assets/swift-logo-big-500x500.png';
 import light from '../../assets/light_box-logo.png';
 import simple from '../../assets/simplefi-logo.png';
 
+type Project = {
+  title: string;
+  image: string;
+  stack: string;
+  blurb: string;
+};
+
 const Portfolio = () => {
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
