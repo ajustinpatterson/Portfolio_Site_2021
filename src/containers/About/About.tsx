@@ -29,13 +29,17 @@ const hasLinks = (blurbBlock: BlurbBlock) =>
   Boolean(blurbBlock?.externalLink || blurbBlock?.route);
 
 const LinkSubSection = (external?: Link, route?: Link) => (
-  <div>
+  <div className="link-container">
     {external && (
-      <a href={external.url} rel="noreferrer" target="_blank">
+      <a className="link" href={external.url} rel="noreferrer" target="_blank">
         {external.label}
       </a>
     )}
-    {route && <Link to={route.url}>{route.label}</Link>}
+    {route && (
+      <Link className="link" to={route.url}>
+        {route.label}
+      </Link>
+    )}
   </div>
 );
 
