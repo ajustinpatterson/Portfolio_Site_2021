@@ -4,7 +4,7 @@
     height: 80vh;
     display: flex;
     margin: 4% 1%;
-    line-height: 1.7rem;
+    line-height: 2rem;
     font-size: 1.2rem;
     text-align: left;
     flex-flow: column wrap;
@@ -20,11 +20,12 @@
       }
       .about-image {
         max-height: 80%;
-        margin: 1rem;
+        margin: 1rem 0 0 3rem;
         border-radius: 16px;
       }
     }
     .about-description {
+      margin-top: 1rem;
       max-width: 60%;
       max-height: 100%;
       #text {
