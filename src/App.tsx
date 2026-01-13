@@ -13,7 +13,11 @@ import Footer from './components/Footer/Footer';
 
 import './App.css';
 
+import labels from './master.json';
+
 function App() {
+  const { frontPage, about, portfolio } = labels;
+
   return (
     <AnimatePresence mode="wait">
       <Header />
@@ -24,7 +28,10 @@ function App() {
         <div id="page-wrap">
           <Routes>
             <Route path="/" element={<FrontPage />} />
-            <Route path="/portfolio" element={<Portfolio />} />
+            <Route
+              path="/portfolio"
+              element={<Portfolio portfolio={portfolio} />}
+            />
             <Route path="/resume" element={<Resume />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
