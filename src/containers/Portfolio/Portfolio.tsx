@@ -46,7 +46,7 @@ const Project = (project: HydratedProject, key: number) => (
     <img className="project-img" src={project.image} alt="placeholder" />
     <div className="project-text">
       <a href={project.url} rel="noreferrer" target="_blank">
-        <h2 style={{ color: 'black' }}>{project.title}</h2>
+        <h2>{project.title}</h2>
       </a>
       <p className="tech-stack">{project.stack}</p>
       <p className="description">{project.blurb}</p>
