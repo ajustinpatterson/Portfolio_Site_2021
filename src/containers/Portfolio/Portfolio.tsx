@@ -55,7 +55,9 @@ const Project = (project: HydratedProject, key: number) => (
 );
 
 const Portfolio = ({ portfolio }: { portfolio: Portfolio }) => {
-  const hydratedProjects = hydrateProjectsMiddleware(portfolio.projects);
+  const hydratedProjects: HydratedProject[] = hydrateProjectsMiddleware(
+    portfolio.projects,
+  );
 
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
