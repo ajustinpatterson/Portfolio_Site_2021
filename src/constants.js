@@ -11,6 +11,6 @@ export const ABOUT_LINKS = {
 
 export const PORTFOLIO_LINKS = [
   'https://github.com/ajustinpatterson/Swift-Video-Meetings',
-  'https://github.com/ajustinpatterson/Swift-Video-Meetings',
   'https://github.com/ajustinpatterson/light-box-solo-project',
+  'https://github.com/raphael-mazet/SimpleFi',
 ];
