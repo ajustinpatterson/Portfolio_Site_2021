@@ -27,7 +27,7 @@ function App() {
 
         <div id="page-wrap">
           <Routes>
-            <Route path="/" element={<FrontPage />} />
+            <Route path="/" element={<FrontPage frontPage={frontPage} />} />
             <Route
               path="/portfolio"
               element={<Portfolio portfolio={portfolio} />}

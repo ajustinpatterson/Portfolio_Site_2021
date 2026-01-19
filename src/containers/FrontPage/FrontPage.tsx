@@ -8,50 +8,58 @@ import care from '../../assets/heart.svg';
 
 import './FrontPage.scss';
 
-import labels from '../../master.json';
-
 type Justin = {
   name: string;
   title: string;
   blurbs: string[];
 };
 
-type Skill = {
+type RawSkill = {
   title: string;
-  image: string;
-  details: string[];
+  items: string[];
 };
 
-const FrontPage = () => {
-  const me: Justin = {
-    name: labels.frontPage.name,
-    title: labels.frontPage.title,
-    blurbs: labels.frontPage.blurbs,
-  };
+type HydratedSkill = {
+  title: string;
+  image: string;
+  items: string[];
+};
 
-  const frontEnd: Skill = {
-    title: labels.frontPage.skills[0].title,
-    image: brackets,
-    details: labels.frontPage.skills[0].items,
-  };
+type FrontPage = {
+  me: Justin;
+  skills: RawSkill[];
+};
 
-  const backEnd: Skill = {
-    title: labels.frontPage.skills[1].title,
-    image: backend,
-    details: labels.frontPage.skills[1].items,
-  };
+const skillImages = [brackets, backend, tools, care];
 
-  const devOps: Skill = {
-    title: labels.frontPage.skills[2].title,
-    image: tools,
-    details: labels.frontPage.skills[2].items,
-  };
+const hydrateSkillsMiddleware = (skills: RawSkill[]) =>
+  skills.map((skill: RawSkill, index: number) => ({
+    ...skill,
+    image: skillImages[index],
+  }));
 
-  const softStuff: Skill = {
-    title: labels.frontPage.skills[3].title,
-    image: care,
-    details: labels.frontPage.skills[3].items,
-  };
+const Skill = (skill: HydratedSkill, key: number) => (
+  <div key={key} id="main-skill">
+    <img
+      id="unicoder"
+      src={skill.image}
+      alt={skill.title}
+      className="skill-img"
+    />
+    <h3>{skill.title}</h3>
+    <ul id="specific-skills">
+      {skill.items.map((item: string, index: number) => (
+        <li key={index}>{item}</li>
+      ))}
+    </ul>
+  </div>
+);
+
+const FrontPage = ({ frontPage }: { frontPage: FrontPage }) => {
+  const { me } = frontPage;
+  const hydratedSkills: HydratedSkill[] = hydrateSkillsMiddleware(
+    frontPage.skills,
+  );
 
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
@@ -73,62 +81,9 @@ const FrontPage = () => {
         />
       </div>
       <div className="skill-trees">
-        <div id="main-skill">
-          <img
-            id="unicoder"
-            src={frontEnd.image}
-            alt="unicoder"
-            className="skill-img"
-          />
-          <h3>{frontEnd.title}</h3>
-          <ul id="specific-skills">
-            {frontEnd.details.map((item: string, index: number) => (
-              <li key={index}>{item}</li>
-            ))}
-          </ul>
-        </div>
-        <div id="main-skill">
-          <img
-            id="back-end"
-            src={backEnd.image}
-            alt="back-end"
-            className="skill-img"
-          />
-          <h3>{backEnd.title}</h3>
-          <ul id="specific-skills">
-            {backEnd.details.map((item: string, index: number) => (
-              <li key={index}>{item}</li>
-            ))}
-          </ul>
-        </div>
-        <div id="main-skill-tools">
-          <img
-            id="tools"
-            src={devOps.image}
-            alt="tools"
-            className="skill-img"
-          />
-          <h3>{devOps.title}</h3>
-          <ul id="specific-skills">
-            {devOps.details.map((item: string, index: number) => (
-              <li key={index}>{item}</li>
-            ))}
-          </ul>
-        </div>
-        <div id="main-skill-care">
-          <img
-            id="care"
-            src={softStuff.image}
-            alt="care"
-            className="skill-img"
-          />
-          <h3>{softStuff.title}</h3>
-          <ul id="specific-skills">
-            {softStuff.details.map((item: string, index: number) => (
-              <li key={index}>{item}</li>
-            ))}
-          </ul>
-        </div>
+        {hydratedSkills.map((skill: HydratedSkill, index: number) =>
+          Skill(skill, index),
+        )}
       </div>
     </motion.div>
   );
